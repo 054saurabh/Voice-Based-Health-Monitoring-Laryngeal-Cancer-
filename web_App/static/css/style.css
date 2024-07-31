@@ -1,0 +1,228 @@
+body{
+    background-image: url('../pic/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@keyframes anim{
+    0%{
+        width: 0%;
+    }
+    40%{
+        width: 40%;
+
+    }
+    80%{
+        width: 80%;
+    }
+    100%{
+        width: 99%;
+    }
+  }
+  .load{
+    transition: all 0.9s ease;
+    margin-top: 1px;
+    position: absolute;
+    background-color: rgb(212, 11, 11);
+    height: 3px;
+    animation: anim 1.4s ;
+  }
+
+
+
+  .dot1 {
+    transition: all 0.9s ease;
+    animation: rotateani1 3s ease alternate infinite;
+    box-shadow: 1px 10px 20px 6px rgba(240, 194, 27, 0.529);
+    position: absolute;
+    left: 940px;
+    top: 220px;
+    height: 199px;
+    width: 199px;
+    background-color: #e18f15b8;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot2 {
+    transition: all 0.9s ease;
+    animation: rotateani2 3s ease alternate infinite;
+    box-shadow: 1px 10px 20px 6px rgba(63, 241, 14, 0.532);
+    position: absolute;
+    left: 492px;
+    top: 460px;
+    height: 190px;
+    width: 190px;
+    background-color: #061ef3ac;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  @keyframes rotateani1{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+
+  }
+  @keyframes rotateani2{
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+  }
+
+  
+.container{
+    position: absolute;
+    left: 50%;
+    top: 33%;
+}
+span{
+    font-size: 36px;
+    color: rgb(0, 106, 255);
+}
+#form1{
+    position: relative;
+    height: 80px;
+    width: 400px;
+
+}
+#form1 .file_upload input{
+    height: 40px;
+    font-size: 21px;
+    position: relative;
+    left: -22px;
+}
+#form1 .file_upload{
+    margin: 40px;
+}
+#form1 button{
+    height: 48px;
+    width: 110px;
+    position: relative;
+    left: 80px;
+    color: blue;
+    background-color: chartreuse;
+    border-radius: 6px;
+    border-color: azure;
+    font-size: 25px;
+
+}
+
+#form1 button:hover{
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+}
+
+.box{
+    background-color: rgba(165, 223, 17, 0.805);
+    height: 340px;
+    width: 450px;
+    border-radius: 6px;
+    position: relative;
+    top: -10px;
+    left: -160px;
+    box-shadow: 3px 2px 12px 1px;
+    
+}
+.file{
+    position: relative;
+    left: 100px;
+    top: 16px;    
+}
+.nav_bar{
+    background-color: rgba(0, 255, 42, 0.944);
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    border-radius: 2px;
+    position: absolute;
+    top: 2px;
+    left: 1.2px;
+    width: 1533px;
+}
+#ul_nav{
+    display: flex;
+}
+#li1{
+    position: relative;
+    left: 30px;
+    list-style-type: none;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.re{
+    text-decoration: none;
+}
+
+#result{
+    position: relative;
+    top: -130px;
+    left: 2px;
+    color: rgb(0, 0, 0);
+}
+#proba{
+    font-size: 34px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: -140px;
+    left: 35px;
+}
+
+#recordButton{
+    border-radius: 6px;
+    background-color: chartreuse;
+    border-color: chartreuse;
+}
+
+#recordButton:hover{
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 0.26);
+}
+#file_up{
+    color: red;
+}
+.container:hover{
+    transform: scale(1.01);
+}
+
+
+button{
+    animation: ani 1000ms ease alternate infinite;
+    transition: all 0.1s ease 0.4s;
+}
+@keyframes ani{
+    0%{
+        border-bottom-color: aqua;
+        border-top-color: rgba(255, 0, 0, 0.855);
+    }
+    50%{
+        border-left-color: gold;
+        border-right-color: coral;
+    }
+    100%{
+        border-bottom-color: deeppink;
+        border-top-color: rgba(255, 179, 0, 0.815);
+        border-left-color: fuchsia;
+        border-right-color: coral;
+    }
+}
+
+.upload_a_file{
+    text-shadow: 2px 2px 3px rgb(235, 221, 197);
+    text-align: center;
+    color: rgb(38, 8, 52);
+    font-family: 'Times New Roman', Times, serif;
+}
